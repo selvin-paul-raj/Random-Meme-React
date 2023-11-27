@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(90deg,rgb(89, 89, 124),rgb(45, 80, 94));
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+/* Header */
+h1{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 5px;
+  text-align: center;
+  z-index: 999;
+  width: 300px;
+}
+/* Meme  */
+span{
+  color: rgb(0, 255, 247);
+}
+/* Container */
+.container{
+  width: 300px;
+  max-height: 460px;
+  margin:auto;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background: transparent;
+  backdrop-filter: blur(80px);
+  -webkit-backdrop-filter:brightness(200px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.914);
+  border: 1px solid rgba(0, 0, 0, 0.718);
+  margin-top: 90px;
+}
+/* Parent of Image and Description  */
+.card{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 20px;
+}
+/* Meme Image */
+img{
+    width: 280px;
+    height:300px;
+    border-radius: 12px;
+    object-fit:fill;
+}
+/* Meme Description */
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+/* Button  */
+button {
+  margin-bottom: 5px;
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #67deff 0%, #4e62f8 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: white;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 255 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+button:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+/* Loading */
+
+  .loader {
+    width: 60px;
+    margin-top: 300%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .ball {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .ball:nth-child(1) {
+    animation: bounce-1 2.1s ease-in-out infinite;
+  }
+  
+  @keyframes bounce-1 {
+    50% {
+      transform: translateY(-18px);
+      width: 6px;
+      height: 6px;
+    }
+  }
+  
+  .ball:nth-child(2) {
+    animation: bounce-3 2.1s ease-in-out 0.3s infinite;
+  }
+  
+  @keyframes bounce-2 {
+    50% {
+      transform: translateY(-18px);
+      width: 6px;
+      height: 6px;
+    }
+  }
+  
+  .ball:nth-child(3) {
+    animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+  }
+  
+  @keyframes bounce-3 {
+    50% {
+      transform: translateY(-18px);
+      width: 6px;
+      height: 6px;
+    }
+  }  
+
+  /* Footer */
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0,);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    color: wheat;
+    opacity: .7;
+    text-shadow: 0 -4px 10px rgb(255, 255, 255,0.3);
+  }
