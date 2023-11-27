@@ -159,7 +159,7 @@ button:active {
     background: rgba(0, 0, 0,);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    color: wheat;
+    color: black;
     opacity: .7;
     text-shadow: 0 -4px 10px rgb(255, 255, 255,0.3);
   }
